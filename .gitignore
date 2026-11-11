@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI Learning Lab benchmark output
+benchmark_results.json
+benchmark_results.csv
+results/
