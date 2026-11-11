@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in the package, an example, or the docs does not work as described.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include the full error message or unexpected output.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. python -m pip install -e .
+        2. python examples/sentiment_demo.py
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, and scikit-learn version.
+      placeholder: Ubuntu 24.04, Python 3.12.4, scikit-learn 1.5.1
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: Please do not paste secrets, credentials, or private data. Report security issues as described in SECURITY.md.
